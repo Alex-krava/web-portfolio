@@ -1,0 +1,36 @@
+.btn-card {
+  list-style: none;
+  display: table;
+  width: 100%;
+  border-radius: 0 0 5px 5px;
+}
+
+.btn-card_main {
+  margin-top: 35px;
+}
+
+.btn-card__item{
+  display: table-cell;
+  border-right: 1px solid $color-5;
+  background-color: $color-6;
+  transition: background-color, 0.2s;
+  height: 100%;
+
+  &:last-of-type {
+    border-right: none;
+  }
+
+  &:hover {
+    background-color: $color-3;
+  }
+}
+
+.btn-card__link {
+  display: table;
+  padding: 13px 32px 14px 31px;;
+  text-decoration: none;
+  height: 100%;
+  color: $color-2;
+  font-family: $light;
+  font-size: 16px;
+}

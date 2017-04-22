@@ -1,0 +1,12 @@
+.home-page {
+  background: url("../img/water.jpg");
+  background-size: cover;
+}
+
+@import 'card/card';
+@import 'photo/photo';
+@import 'text/text';
+@import 'social/social';
+@import 'btn-card/btn-card';
+@import 'footer/footer-home';
+

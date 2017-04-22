@@ -29,6 +29,7 @@ $.gulp.task('default', $.gulp.series(
     'pug',
     'webpack',
     'copy:image',
+    'copy:fonts',
     'css:foundation',
     'sprite:svg',
     'sprite:png'

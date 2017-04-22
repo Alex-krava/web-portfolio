@@ -1,17 +1,32 @@
 extends ../_template
 
 block variables
-  - var title = 'Home page'
+  - var title = 'Portfolio'
 
 block css
   link(rel='stylesheet' href='/assets/css/foundation.css')
-  link(rel='stylesheet' href='/assets/css/app.css')
+  link(rel='stylesheet' href='/assets/css/home.css')
 
 block content
-  .content
-    include ../common/_header
-    include ../common/content/_index
-  include ../common/_footer
+  - var homePage = true
+
+  .wrapper.home-page
+    .content
+      include ../common/_header
+      .card
+
+        include ../common/content/elems/photo
+        include ../common/content/elems/social
+
+        ul.btn-card.btn-card_main
+          li.btn-card__item
+            a(href='/works.html').btn-card__link Мои работы
+          li.btn-card__item
+            a(href='/about.html').btn-card__link Обо мне
+          li.btn-card__item
+            a(href='/blog.html').btn-card__link Блог
+
+    include ../common/_footer
 
 block js
   script(src='/assets/js/app.js' defer)

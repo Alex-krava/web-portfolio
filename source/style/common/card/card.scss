@@ -1,0 +1,11 @@
+.card {
+  width: 380px;
+  padding-top: 40px;
+  background-color: $color-1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  overflow: hidden;
+}

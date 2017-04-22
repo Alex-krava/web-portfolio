@@ -1,0 +1,15 @@
+.photo {
+  margin-bottom: 34px;
+}
+
+.photo__container {
+  width: 141px;
+  height: 141px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #fff;
+}
+.photo__img {
+  max-width: 100%;
+}

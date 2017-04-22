@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+.wrapper {
+  display: table;
+  height: 100%;
+  width: 100%;
+  min-height: 550px;
+  //todo
+  min-width: 1500px;
+  position: relative;
+}
+.content {
+  display: table-row;
+  height: 100%;
+}
+
+@import 'utils/placeholders';
+@import 'common/fonts/fonts';
+@import 'common/variable';
+@import 'common/home-page';

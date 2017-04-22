@@ -1,0 +1,40 @@
+.social {
+  list-style: none;
+  text-align: center;
+  cursor: default;
+}
+
+.social__item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 25px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.social__link {
+  text-decoration: none;
+}
+
+.social__icon {
+  fill: $color-4;
+  transition: fill 0.2s;
+
+  &:hover {
+    fill: $color-3;
+  }
+}
+
+.social__icon_vk {
+  width: 31px;
+}
+
+.social__icon_github {
+  width: 26px;
+}
+
+.social__icon_linkedin {
+  width: 24px;
+}
