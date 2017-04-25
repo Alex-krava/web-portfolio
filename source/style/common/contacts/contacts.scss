@@ -1,0 +1,58 @@
+.contacts {
+  padding: 36px 40px;
+  width: 380px;
+  border-radius: 4px 5px 5px 4px;
+  background-color: $color-18;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+}
+
+.contacts__items{
+  list-style: none;
+}
+
+.contacts__item {
+  margin-bottom: 25px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.contacts__link {
+  color: $color-13;
+  font-family: $medium;
+  font-size: 16px;
+  text-decoration: none;
+  padding-left: 35px;
+  position: relative;
+}
+
+.contacts__icon {
+  position: absolute;
+  left: 0;
+  fill: $color-6;
+}
+
+.contacts__text {
+  vertical-align: middle;
+}
+
+.contacts__icon_skype {
+  width: 24px;
+}
+
+.contacts__icon_phone {
+  width: 17px;
+}
+
+.contacts__icon_marker {
+  width: 16px;
+}
+
+.contacts__icon_envelope2 {
+  width: 23px;
+}

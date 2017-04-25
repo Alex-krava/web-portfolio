@@ -1,0 +1,68 @@
+.header-section {
+  height: 100vh;
+  min-height: 550px;
+  background: url("../img/water.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.header-section__container {
+  width: 67.5%;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.header-section__icon {
+  width: 100%;
+}
+
+.header-section__icon_portfolio {
+  fill: $color-7;
+}
+
+.header-section__icon_down {
+  fill: $color-10;
+  transition: fill 0.2s;
+
+  &:hover {
+    fill: $color-2;
+  }
+}
+
+.header-section__photo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header-section__bottom {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.header-section__triangle {
+  display: block;
+}
+
+.header-section__triangle_about {
+  .left {
+    fill: $color-8;
+  }
+  .right {
+    fill: $color-9;
+  }
+}
+
+.header-section__link_down {
+  display: block;
+  width: 26px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

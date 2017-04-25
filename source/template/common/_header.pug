@@ -1,2 +1,11 @@
-header
+if homePage
+    header.header-home
+
+if otherPage
+    header.header-about
+        .container
+            include content/elems/social
+            a(href='#').header-about__link
+                svg.header-about__icon.header-about__icon_hamburger(viewBox="0 0 10 10" preserveAspectRatio='none')
+                    use(xlink:href='./assets/img/sprite.svg#hamburger')
 

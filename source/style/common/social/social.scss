@@ -1,7 +1,32 @@
 .social {
   list-style: none;
-  text-align: center;
   cursor: default;
+}
+
+.social_home {
+  text-align: center;
+
+  .social__icon {
+    fill: $color-4;
+    transition: fill 0.2s;
+
+    &:hover {
+      fill: $color-3;
+    }
+  }
+}
+
+.social_header {
+  float: left;
+
+  .social__icon {
+    fill: $color-2;
+    transition: fill 0.2s;
+
+    &:hover {
+      fill: $color-6;
+    }
+  }
 }
 
 .social__item {
@@ -16,15 +41,6 @@
 
 .social__link {
   text-decoration: none;
-}
-
-.social__icon {
-  fill: $color-4;
-  transition: fill 0.2s;
-
-  &:hover {
-    fill: $color-3;
-  }
 }
 
 .social__icon_vk {

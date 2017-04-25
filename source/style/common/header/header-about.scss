@@ -1,0 +1,18 @@
+.header-about {
+  padding-top: 30px;
+}
+
+.header-about__link {
+  float: right;
+}
+
+.header-about__icon_hamburger {
+  width: 30px;
+  fill: $color-2;
+  transition: fill 0.2s;
+
+  &:hover {
+    fill: $color-6;
+  }
+
+}

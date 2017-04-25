@@ -1,0 +1,56 @@
+.about-section {
+  width: 100%;
+  min-height: 200px;
+  display: table;
+}
+
+.about-section__container {
+  width: 900px;
+  box-sizing: border-box;
+}
+.about-section__container_left {
+  float: right;
+}
+
+.about-section__container_right {
+  float: left;
+  padding-left: 40px;
+}
+
+.about-section__about-me,
+.about-section__skills{
+  display: table-cell;
+  width: 50%;
+  padding-bottom: 40px;
+  vertical-align: top;
+}
+
+.about-section__about-me {
+  background-color: $color-8;
+}
+
+.about-section__skills {
+  background-color: $color-9;
+}
+
+.about-section__cell2{
+  padding-right: 15px;
+}
+
+.about-section__cell1,
+.about-section__cell2 {
+  display: table-cell;
+  width: 50%;
+  vertical-align: top;
+  position: relative;
+}
+
+.about-section__photo {
+  width: 100%;
+  margin-bottom: 40px;
+  overflow: hidden;
+
+  .about-section__img {
+    max-width: 100%;
+  }
+}

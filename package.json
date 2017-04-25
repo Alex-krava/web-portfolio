@@ -31,6 +31,7 @@
   },
   "dependencies": {
     "babel-polyfill": "^6.23.0",
-    "normalize.css": "~5.0.0"
+    "normalize.css": "~5.0.0",
+    "svg4everybody": "~2.1.8"
   }
 }

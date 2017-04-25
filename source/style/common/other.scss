@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+.wrapper {
+  display: table;
+  height: 100%;
+  width: 100%;
+  min-height: 550px;
+  //todo
+  min-width: 1500px;
+  position: relative;
+}
+.content {
+  display: table-row;
+  height: 100%;
+}
+
+.container {
+  width: 1800px;
+  margin: auto;
+  padding: 0 30px;
+  box-sizing: border-box;
+  @extend %clearfix;
+}
+
+.row {
+  width: 100%;
+  margin: auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+  @extend %clearfix;
+}

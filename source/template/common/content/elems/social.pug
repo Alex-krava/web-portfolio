@@ -1,14 +1,29 @@
-ul.social
-    li.social__item
-        a(href='#' target='_blank').social__link
-            svg.social__icon.social__icon_vk(viewBox="0 0 10 10" preserveAspectRatio='none')
-                use(xlink:href='./assets/img/sprite.svg#vk')
-    li.social__item
-        a(href='#' target='_blank').social__link
-            svg.social__icon.social__icon_github(viewBox="0 0 10 10" preserveAspectRatio='none')
-                use(xlink:href='./assets/img/sprite.svg#github')
-    li.social__item
-        a(href='#' target='_blank').social__link
-            svg.social__icon.social__icon_linkedin(viewBox="0 9 100 110" preserveAspectRatio='none')
-                use(xlink:href='./assets/img/sprite.svg#in')
+if homePage
+    ul.social.social_home
+        li.social__item
+            a(href='#' target='_blank').social__link
+                svg.social__icon.social__icon_vk(viewBox="0 0 10 10" preserveAspectRatio='none')
+                    use(xlink:href='./assets/img/sprite.svg#vk')
+        li.social__item
+            a(href='#' target='_blank').social__link
+                svg.social__icon.social__icon_github(viewBox="0 0 10 10" preserveAspectRatio='none')
+                    use(xlink:href='./assets/img/sprite.svg#github')
+        li.social__item
+            a(href='#' target='_blank').social__link
+                svg.social__icon.social__icon_linkedin(viewBox="0 9 100 110" preserveAspectRatio='none')
+                    use(xlink:href='./assets/img/sprite.svg#in')
+else
+    ul.social.social_header
+        li.social__item
+            a(href='#' target='_blank').social__link
+                svg.social__icon.social__icon_vk(viewBox="0 0 10 10" preserveAspectRatio='none')
+                    use(xlink:href='./assets/img/sprite.svg#vk')
+        li.social__item
+            a(href='#' target='_blank').social__link
+                svg.social__icon.social__icon_github(viewBox="0 0 10 10" preserveAspectRatio='none')
+                    use(xlink:href='./assets/img/sprite.svg#github')
+        li.social__item
+            a(href='#' target='_blank').social__link
+                svg.social__icon.social__icon_linkedin(viewBox="0 9 100 110" preserveAspectRatio='none')
+                    use(xlink:href='./assets/img/sprite.svg#in')
 

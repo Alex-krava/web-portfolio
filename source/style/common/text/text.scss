@@ -1,3 +1,10 @@
+.text {
+  color: #566358;
+  font-family: $regular;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
 .text__name {
   color: $color-2;
   font-family: $regular;
@@ -13,4 +20,83 @@
   font-size: 16px;
   line-height: 1;
   text-align: center;
+}
+
+.text__page-title {
+  width: 77%;
+  margin-top: 0;
+  position: relative;
+  padding: 55px 0 26px;
+  text-align: center;
+  color: $color-12;
+  font-family: $sansus;
+  font-size: 63px;
+  line-height: 66px;
+  text-transform: uppercase;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 89px;
+    height: 3px;
+    background-color: $color-12;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.text__page-title_about {
+  position: absolute;
+  top: -60px;
+  right: 27px;
+}
+
+.text__icon_about {
+  fill: $color-11;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.text__title {
+  display: block;
+  color: $color-13;
+  font-family: $medium;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.text__title_about {
+  margin-top: 40px;
+}
+
+.text__title-line {
+  clear: both;
+  max-width: 318px;
+  color: $color-13;
+  font-family: $sansus;
+  font-size: 35px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-bottom: 25px;
+  line-height: 1;
+  text-align: center;
+  margin: 0 auto 30px;
+  position: relative;
+  line-height: 41px;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 89px;
+    height: 3px;
+    background-color: $color-12;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
