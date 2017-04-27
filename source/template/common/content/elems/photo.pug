@@ -1,6 +1,15 @@
-.photo
-    .photo__container
-        img.photo__img(src='./assets/img/photo/test-img.png' alt='Александр Кравченко')
-    .text__name Александр Кравченко
-    .text__subname Личный сайт веб разработчика
+if blogPage
+    .photo.photo_blog
+        .photo__container
+            img.photo__img(src='./assets/img/photo/test-img.png' alt='Александр Кравченко')
 
+    h1.text__page-title.text__page-title_blog Блог
+        svg.text__icon.text__icon_blog(viewBox="0 0 40 30" preserveAspectRatio='none')
+            use(xlink:href='./assets/img/sprite.svg#blog-header')
+    .text__subname Статьи, которые я написал
+else
+    .photo
+        .photo__container
+            img.photo__img(src='./assets/img/photo/test-img.png' alt='Александр Кравченко')
+        .text__name Александр Кравченко
+        .text__subname Личный сайт веб разработчика

@@ -53,6 +53,24 @@
   right: 27px;
 }
 
+.text__page-title_blog {
+  min-width: 300px;
+  color: $color-2;
+  padding: 43px 0 26px;
+
+  &:after {
+    background-color: $color-2;
+  }
+}
+
+.text__icon_blog {
+  width: 100%;
+  fill: $color-7;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
 .text__icon_about {
   fill: $color-11;
   position: absolute;

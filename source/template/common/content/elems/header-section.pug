@@ -2,15 +2,23 @@ section.header-section
     include ../../_header
     .container
         .header-section__container
-            svg.header-section__icon.header-section__icon_portfolio(viewBox="0 0 39 10" preserveAspectRatio='none')
-                use(xlink:href='./assets/img/sprite.svg#portfolio')
+            unless blogPage
+                svg.header-section__icon.header-section__icon_portfolio(viewBox="0 0 39 10" preserveAspectRatio='none')
+                    use(xlink:href='./assets/img/sprite.svg#portfolio')
             .header-section__photo
                 include photo
 
     .header-section__bottom
-        a(href='#').header-section__link.header-section__link_down
-            svg.header-section__icon.header-section__icon_down(viewBox="0 0 10 10" preserveAspectRatio='none')
-                use(xlink:href='./assets/img/sprite.svg#arrow-down')
-        svg.header-section__triangle.header-section__triangle_about(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 1000 85', preserveAspectRatio='none')
-            polygon.left(points='0,0   0,86   500.8,86   500.8,75.5')
-            polygon.right(points='1000,0   1000,86   500,86   500,75.5')
+        unless blogPage
+            a(href='#').header-section__link.header-section__link_down
+                svg.header-section__icon.header-section__icon_down(viewBox="0 0 10 10" preserveAspectRatio='none')
+                    use(xlink:href='./assets/img/sprite.svg#arrow-down')
+
+        if blogPage
+            svg.header-section__triangle.header-section__triangle_blog(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 1000 85', preserveAspectRatio='none')
+                polygon.left(points='0,0   0,86   500.8,86   500.8,75.5')
+                polygon.right(points='1000,0   1000,86   500,86   500,75.5')
+        else
+            svg.header-section__triangle.header-section__triangle_about(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 1000 85', preserveAspectRatio='none')
+                polygon.left(points='0,0   0,86   500.8,86   500.8,75.5')
+                polygon.right(points='1000,0   1000,86   500,86   500,75.5')

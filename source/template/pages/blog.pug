@@ -1,21 +1,20 @@
 extends ../_template
 
 block variables
-    - var title = 'Portfolio | About'
+    - var title = 'Portfolio | Blog'
 
 block css
     link(rel='stylesheet' href='/assets/css/foundation.css')
-    link(rel='stylesheet' href='/assets/css/about.css')
+    link(rel='stylesheet' href='/assets/css/other.css')
 
 block content
     - var otherPage = true
+    - var blogPage = true
 
     .wrapper.about-page
         .content
             include ../common/content/elems/header-section
-
-            //include ../common/content/elems/about-section
-            //include ../common/content/elems/map
+            include ../common/content/elems/blog-section
         include ../common/_footer
 
 block js

@@ -1,0 +1,39 @@
+.navigation {
+  float: left;
+  width: 15.4%;
+}
+
+.navigation__items {
+  list-style: none;
+}
+
+.navigation__item {
+  display: block;
+  width: 100%;
+  margin-bottom: 35px;
+  text-align: right;
+}
+
+.navigation__link {
+  display: block;
+  min-width: 42px;
+  padding: 15px 17px;
+  text-decoration: none;
+  color: $color-19;
+  font-family: $light;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+
+  &:hover {
+    color: $color-3;
+    font-weight: 700;
+    box-shadow: 3px 0px 0px 0px $color-3;
+  }
+}
+
+.navigation__link_active {
+  color: $color-3;
+  font-weight: 700;
+  box-shadow: 3px 0px 0px 0px $color-3;
+}

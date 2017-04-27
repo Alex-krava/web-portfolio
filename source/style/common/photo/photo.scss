@@ -10,6 +10,14 @@
   overflow: hidden;
   background-color: #fff;
 }
+
+.photo_blog {
+  margin-bottom: 0;
+
+  .photo__container {
+    margin: 0 auto;
+  }
+}
 .photo__img {
   max-width: 100%;
 }
