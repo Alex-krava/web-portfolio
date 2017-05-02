@@ -63,6 +63,18 @@
   }
 }
 
+.text__page-title_work,
+.text__page-title_work-2{
+  width: 100%;
+  max-width: 506px;
+  margin: -33px auto 25px;
+  font-weight: 400;
+}
+
+.text__page-title_work-2 {
+  margin: 71px auto 30px;
+}
+
 .text__icon_blog {
   width: 100%;
   fill: $color-7;
@@ -72,6 +84,13 @@
 }
 
 .text__icon_about {
+  fill: $color-11;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.text__icon_work {
   fill: $color-11;
   position: absolute;
   left: 0;

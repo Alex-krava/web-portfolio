@@ -26,6 +26,7 @@
 }
 
 .btn-card__link {
+  width: 100%;
   display: table;
   padding: 13px 32px 14px 31px;;
   text-decoration: none;
@@ -33,4 +34,11 @@
   color: $color-2;
   font-family: $light;
   font-size: 16px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
 }

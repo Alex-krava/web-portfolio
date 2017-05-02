@@ -1,0 +1,73 @@
+.comments-section {
+  background: $color-9 url("../img/works-bottom.png") bottom no-repeat;
+  background-size: 100%;
+  padding-bottom: 340px;
+  text-align: center;
+
+  .container {
+    position: relative;
+  }
+}
+
+.comments-section__comments {
+ list-style: none;
+  text-align: center;
+  margin-bottom: 67px;
+}
+
+.comments-section__comment {
+  display: inline-block;
+  margin-right: 24px;
+  max-width: 376px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.comments-section__photo {
+  display: inline-block;
+  width: 77px;
+  height: 77px;
+  overflow: hidden;
+  position: relative;
+  background-color: $color-9;
+  border-radius: 50%;
+  margin-bottom: 21px;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.comments-section__text {
+  color: $color-23;
+  font-family: $light-italic;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 29px;
+}
+
+.comments-section__name,
+.comments-section__profession {
+  font-family: $light-italic;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.comments-section__name {
+  color: $color-3;
+  font-weight: bold;
+}
+
+.comments-section__profession {
+  color: $color-12;
+}
+
+.comments-section__page-up {
+  width: 26px;
+  display: inline-block;
+  position: absolute;
+  bottom: -100px;
+  fill: $color-2;
+}

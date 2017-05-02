@@ -1,0 +1,56 @@
+section.work-section
+    .work-section__title
+        .container
+            h1.text__page-title.text__page-title_work Мои работы
+                svg.text__icon.text__icon_work(viewBox="0 0 29 10" preserveAspectRatio='none')
+                    use(xlink:href='./assets/img/sprite.svg#works')
+    .slider-section
+        .container
+            .slider-section__img
+                img(src='./assets/img/photo/test.png')
+
+            .slider-section__info
+                .slider-section__container
+                    .slider-section__name
+                        h3.text__title-line Сайт школы онлайн Образования
+                    .slider-section__tech HTML , CSS, JAVASCRIPT
+                    a(href='#' target='_blank').slider-section__btn
+                        svg.slider-section__icon(viewBox="0 0 10 10" preserveAspectRatio='none')
+                            use(xlink:href='./assets/img/sprite.svg#link')
+                        span.slider-section__text Посмотреть сайт
+
+            .slider-section__nav
+                a(href='#').slider-section__navigation
+                    svg.slider-section__arrow.slider-section__arrow_down(viewBox="0 0 10 10" preserveAspectRatio='none')
+                        use(xlink:href='./assets/img/sprite.svg#arrow-down')
+                    img(src='./assets/img/photo/test.png')
+                a(href='#').slider-section__navigation
+                    svg.slider-section__arrow.slider-section__arrow_up(viewBox="0 0 10 10" preserveAspectRatio='none')
+                        use(xlink:href='./assets/img/sprite.svg#arrow-down')
+                    img(src='./assets/img/photo/test.png')
+    .comments-section
+        .container
+            .text__page-title.text__page-title_work-2 Что обо мне говорят
+                svg.text__icon.text__icon_work(viewBox="0 0 29 10" preserveAspectRatio='none')
+                    use(xlink:href='./assets/img/sprite.svg#about')
+
+            ul.comments-section__comments
+                li.comments-section__comment
+                    .comments-section__photo
+                        img(src='./assets/img/photo/2.png' alt='photo')
+                    .comments-section__text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+                    .comments-section__name Ковальчук Дмитрий
+                    .comments-section__profession — основатель Loftschool
+                li.comments-section__comment
+                    .comments-section__photo
+                        img(src='./assets/img/photo/1.png' alt='photo')
+                    .comments-section__text Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+                    .comments-section__name Сабанцев Владимир
+                    .comments-section__profession — преподаватель
+
+            include contact-form
+
+            a(href='#').comments-section__page-up
+                svg(viewBox="0 0 10 10" preserveAspectRatio='none')
+                    use(xlink:href='./assets/img/sprite.svg#arrow-up')
+

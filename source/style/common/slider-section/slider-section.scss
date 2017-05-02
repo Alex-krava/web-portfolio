@@ -1,0 +1,152 @@
+.slider-section {
+  background-color: $color-8;
+
+  .container {
+    @extend %clearfix;
+  }
+}
+
+.slider-section__img {
+  height: 525px;
+  width: 50%;
+  background-color: $color-20;
+  float: right;
+  position: relative;
+
+  img {
+    max-width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 100%;
+  }
+}
+
+.slider-section__info {
+  height: 750px;
+  width: 50%;
+  background-color: $color-8;
+  float: left;
+  position: relative;
+}
+
+.slider-section__nav {
+  height: 225px;
+  width: 50%;
+  background-color: $color-20;
+  float: right;
+  display: table;
+  position: relative;
+
+  img {
+    max-width: 70%;
+    display: block;
+    margin: auto;
+  }
+
+}
+
+.slider-section__arrow {
+  width: 43px;
+  fill: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+}
+
+.slider-section__arrow_up {
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+.slider-section__arrow_down {
+  transform: translate(-50%, -50%);
+}
+
+.slider-section__navigation {
+  display: table-cell;
+  width: 50%;
+  vertical-align: middle;
+  text-align: center;
+  position: relative;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  &:first-child {
+    &:after {
+      background-color: $color-21;
+    }
+  }
+  &:last-child {
+    &:after {
+      background-color: $color-22;
+    }
+  }
+}
+
+.slider-section__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slider-section__name {
+  .text__title-line {
+    max-width: 320px;
+  }
+}
+
+.slider-section__tech {
+  text-align: center;
+  color: $color-3;
+  font-family: $regular;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 58px;
+}
+
+.slider-section__btn {
+  display: block;
+  margin: auto;
+  max-width: 200px;
+  text-align: center;
+  position: relative;
+  background-color: $color-6;
+  box-shadow: none;
+  border: none;
+  border-radius: 24px;
+  padding: 3px 0;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: $color-3;
+  }
+}
+
+.slider-section__icon {
+  display: inline-block;
+  width: 20px;
+  vertical-align: middle;
+  fill: $color-2;
+}
+.slider-section__text {
+  display: inline-block;
+  margin-left: 12px;
+
+  color: $color-2;
+  font-family: $regular;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 36px;
+}

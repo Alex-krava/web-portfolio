@@ -8,14 +8,13 @@ block css
     link(rel='stylesheet' href='/assets/css/other.css')
 
 block content
+    - var workPage = true
     - var otherPage = true
 
     .wrapper.about-page
         .content
             include ../common/content/elems/header-section
-
-            //include ../common/content/elems/about-section
-            //include ../common/content/elems/map
+            include ../common/content/elems/works-section
         include ../common/_footer
 
 block js
