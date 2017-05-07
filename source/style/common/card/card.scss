@@ -8,4 +8,11 @@
   transform: translate(-50%, -50%);
   border-radius: 5px;
   overflow: hidden;
+
+  @include tablet() {
+    width: 348px;
+  }
+  @include phone() {
+    width: 300px;
+  }
 }

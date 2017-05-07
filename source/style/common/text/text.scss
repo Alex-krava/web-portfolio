@@ -12,6 +12,10 @@
   line-height: 1;
   text-align: center;
   margin-bottom: 9px;
+
+  @include phone() {
+    font-size: 21px;
+  }
 }
 .text__subname {
   opacity: 0.8;
@@ -20,6 +24,10 @@
   font-size: 16px;
   line-height: 1;
   text-align: center;
+
+  @include phone() {
+    font-size: 14px;
+  }
 }
 
 .text__page-title {

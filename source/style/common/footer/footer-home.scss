@@ -4,4 +4,8 @@
   color: $color-2;
   font-family: $light;
   font-size: 16px;
+
+  @include phone() {
+    font-size: 14px;
+  }
 }

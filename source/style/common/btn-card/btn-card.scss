@@ -26,9 +26,8 @@
 }
 
 .btn-card__link {
-  width: 100%;
   display: table;
-  padding: 13px 32px 14px 31px;;
+  padding: 13px 32px 14px 31px;
   text-decoration: none;
   height: 100%;
   color: $color-2;
@@ -40,5 +39,14 @@
 
   &:focus {
     outline: none;
+  }
+
+  @include tablet() {
+    padding: 15px 26px;
+  }
+
+  @include phone() {
+    font-size: 14px;
+    padding: 16px 22px;
   }
 }
