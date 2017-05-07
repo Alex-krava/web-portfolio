@@ -6,7 +6,7 @@
 
 .menu__item {
   display: inline-block;
-  margin-right: 40px;
+  margin-right: 7.4%;
 }
 
 .menu__link {
@@ -17,4 +17,12 @@
   font-size: 16px;
   line-height: 24px;
   text-decoration: none;
+
+  @include tablet() {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  @include phone() {
+    text-align: center;
+  }
 }

@@ -10,28 +10,49 @@
 .footer__top {
   background-color: $color-15;
   padding: 30px 0;
+
+  @include phone() {
+    padding: 19px 0;
+  }
 }
 
 .footer__container {
   width: 100%;
   display: table;
   table-layout: fixed;
+
+  @include tablet() {
+    display: block;
+  }
 }
 
 .footer__info,
 .footer__navigation,
 .footer__quote {
   display: table-cell;
+  box-sizing: border-box;
 }
 
 .footer__navigation,
 .footer__quote {
   padding: 0 30px;
+
+  @include desktop() {
+    padding: 0 2.7%;
+  }
 }
 
 .footer__info,
 .footer__navigation {
   border-right: 1px solid $color-16;
+
+  @include tablet() {
+    width: 50%;
+  }
+  @include phone() {
+    display: block;
+    width: 100%;
+  }
 }
 
 .footer__info {
@@ -43,6 +64,28 @@
 
   .footer__text {
     width: 61%;
+  }
+
+  @include desktop() {
+    .footer__text {
+      width: 80.5%;
+    }
+  }
+  @include tablet() {
+    font-size: 14px;
+    .footer__text {
+      width: 76.3%;
+    }
+  }
+  @include phone() {
+    text-align: center;
+    padding-bottom: 17px;
+    border-right: none;
+    border-bottom: 1px solid $color-16;
+
+    .footer__text {
+      width: 100%;
+    }
   }
 }
 
@@ -58,9 +101,27 @@
     display: block;
     font-family: $bold-italic;
   }
+
+  @include tablet() {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin-top: 30px;
+
+    .footer__text {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+  @include phone() {
+    margin-top: 19px;
+    text-align: center;
+  }
 }
 
 .footer__navigation {
+  @extend %clearfix;
+
   .social__icon {
     fill: $color-4;
   }
@@ -72,6 +133,27 @@
       }
     }
   }
+
+  @include tablet() {
+    padding: 0 0 0 4.4%;
+    border-right: none;
+  }
+
+  @include phone() {
+    padding: 19px 0;
+    border-bottom: 1px solid $color-16;
+
+    .menu {
+      text-align: center;
+      width: 100%;
+    }
+
+    .social {
+      width: 100%;
+      display: block;
+      text-align: center;
+    }
+  }
 }
 
 .footer__bottom {
@@ -81,4 +163,8 @@
   font-size: 16px;
   padding: 10px 0;
   text-align: center;
+
+  @include tablet() {
+    font-size: 14px;
+  }
 }

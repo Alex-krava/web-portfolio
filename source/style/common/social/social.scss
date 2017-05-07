@@ -45,12 +45,24 @@
 
 .social__icon_vk {
   width: 31px;
+
+  @include phone() {
+    width: 24px;
+  }
 }
 
 .social__icon_github {
   width: 26px;
+
+  @include phone() {
+    width: 21px;
+  }
 }
 
 .social__icon_linkedin {
   width: 24px;
+
+  @include phone() {
+    width: 19px;
+  }
 }

@@ -20,11 +20,14 @@ body {
 }
 
 .container {
-  width: 1800px;
   margin: auto;
   padding: 0 30px;
   box-sizing: border-box;
   @extend %clearfix;
+
+  @include phone() {
+    padding: 0 11px;
+  }
 }
 
 .row {

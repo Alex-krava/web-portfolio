@@ -30,6 +30,12 @@
   }
 }
 
+.text__subname_blog {
+  @include tablet() {
+    font-size: 14px;
+  }
+}
+
 .text__page-title {
   width: 77%;
   margin-top: 0;
@@ -53,6 +59,13 @@
     left: 50%;
     transform: translateX(-50%);
   }
+
+  @include tablet() {
+    font-size: 49px;
+  }
+  @include phone() {
+    font-size: 35px;
+  }
 }
 
 .text__page-title_about {
@@ -68,6 +81,14 @@
 
   &:after {
     background-color: $color-2;
+  }
+
+  @include tablet() {
+    padding: 21px 0 19px;
+    min-width: 243px;
+  }
+  @include phone() {
+    min-width: 153px;
   }
 }
 
