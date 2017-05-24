@@ -1,0 +1,33 @@
+.btn__admin {
+  float: right;
+  border: 1px solid $color-2;
+  border-radius: 30px;
+  display: inline-block;
+  padding: 15px 29px;
+
+  color: $color-2;
+  font-family: $regular;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  text-decoration: none;
+  transition: all 0.2s;
+  margin-top: 24px;
+
+  &:hover {
+    border: 1px solid #729e19;
+    background-color: $color-3;
+  }
+
+  @include desktop() {
+    margin-top: 24px;
+  }
+  @include phone() {
+    margin-top: 10px;
+    float: none;
+  }
+}
+
+.btn-card_back {
+
+}

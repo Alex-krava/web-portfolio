@@ -1,0 +1,7 @@
+.header-home {
+  @extend %clearfix;
+
+  @include phone() {
+    text-align: center;
+  }
+}

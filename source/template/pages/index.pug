@@ -13,17 +13,33 @@ block content
   .wrapper.home-page
     .content
       include ../common/_header
-      .card
-        include ../common/content/elems/photo
-        include ../common/content/elems/social
 
-        ul.btn-card.btn-card_main
-          li.btn-card__item
-            a(href='/works.html').btn-card__link Мои работы
-          li.btn-card__item
-            a(href='/about.html').btn-card__link Обо мне
-          li.btn-card__item
-            a(href='/blog.html').btn-card__link Блог
+      .flip-container
+        .flipper
+          .front
+            .card
+              include ../common/content/elems/photo
+              include ../common/content/elems/social
+
+              ul.btn-card.btn-card_main
+                li.btn-card__item
+                  a(href='/works.html').btn-card__link Мои работы
+                li.btn-card__item
+                  a(href='/about.html').btn-card__link Обо мне
+                li.btn-card__item
+                  a(href='/blog.html').btn-card__link Блог
+          .back
+            .card.card_back
+              h1.text__name Блок авторизация находится в разработке
+
+              ul.btn-card.btn-card_back
+                li.btn-card__item
+                  a(href='#').btn-card__link.toggle-flip На главную
+                li.btn-card__item
+                  a(href='#').btn-card__link Войти
+
+
+
 
     include ../common/_footer
 

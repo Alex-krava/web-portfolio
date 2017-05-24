@@ -7,6 +7,17 @@
   .container {
     position: relative;
   }
+
+  @include laptop() {
+    padding-bottom: 470px;
+  }
+  @include tablet() {
+    background-size: inherit;
+  }
+  @include phone() {
+    padding-bottom: 550px;
+    background-size: inherit;
+  }
 }
 
 .comments-section__comments {
@@ -21,6 +32,17 @@
   max-width: 376px;
 
   &:last-of-type {
+    margin-right: 0;
+  }
+
+  @include laptop() {
+    max-width: 339px;
+    margin-top: 39px;
+  }
+  @include phone() {
+    display: block;
+    max-width: 100%;
+    padding: 0 15px;
     margin-right: 0;
   }
 }
@@ -38,6 +60,11 @@
   img {
     max-width: 100%;
   }
+
+  @include phone() {
+    width: 51px;
+    height: 51px;
+  }
 }
 
 .comments-section__text {
@@ -46,6 +73,16 @@
   font-size: 16px;
   line-height: 26px;
   margin-bottom: 29px;
+
+  @include laptop() {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+
+  @include phone() {
+    text-align: left;
+  }
 }
 
 .comments-section__name,
@@ -53,6 +90,11 @@
   font-family: $light-italic;
   font-size: 16px;
   line-height: 24px;
+
+  @include phone() {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 .comments-section__name {

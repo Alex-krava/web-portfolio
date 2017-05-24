@@ -3,11 +3,33 @@
   margin: auto;
   overflow: hidden;
   border-radius: 5px;
-  background-color: $color-24;
+  position: relative;
+  z-index: 1100;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: $color-25;
+    filter: blur(90px);
+    z-index: 90;
+    top: 0;
+  }
+
+  @include tablet() {
+    width: 349px;
+  }
+  @include phone() {
+    width: 100%;
+  }
 }
 
 .contact-form__input-group {
   padding: 32px 20px 20px 20px;
+  position: relative;
+  z-index: 100;
 }
 
 .contact-form__input {
@@ -19,8 +41,79 @@
   box-sizing: border-box;
   margin-bottom: 20px;
 
+  &::-webkit-input-placeholder       {
+    transition: opacity 0.3s ease;
+    color: $color-23;
+    font-family: $regular;
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.5;
+  }
+  &::-moz-placeholder                {
+    transition: opacity 0.3s ease;
+    color: $color-23;
+    font-family: $regular;
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.5;
+  }
+  &:-moz-placeholder                 {
+    transition: opacity 0.3s ease;
+    color: $color-23;
+    font-family: $regular;
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.5;
+  }
+  &:-ms-input-placeholder            {
+    transition: opacity 0.3s ease;
+    color: $color-23;
+    font-family: $regular;
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.5;
+  }
+  &:focus::-webkit-input-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+  }
+  &:focus::-moz-placeholder          {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+  }
+  &:focus:-moz-placeholder           {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+  }
+  &:focus:-ms-input-placeholder      {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+  }
+
   &:focus {
     outline: none;
+  }
+
+  @include laptop() {
+    padding: 13px 19px;
+  }
+  @include tablet() {
+    &::-webkit-input-placeholder       {
+      font-size: 14px;
+    }
+    &::-moz-placeholder                {
+      font-size: 14px;
+    }
+    &:-moz-placeholder                 {
+      font-size: 14px;
+    }
+    &:-ms-input-placeholder            {
+      font-size: 14px;
+    }
   }
 }
 

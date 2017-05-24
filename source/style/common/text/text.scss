@@ -72,6 +72,19 @@
   position: absolute;
   top: -60px;
   right: 27px;
+
+  @include desktop() {
+    position: relative;
+    width: 63.7%;
+    margin: auto;
+    right: 0;
+  }
+  @include tablet() {
+    width: 49%;
+    top: 0;
+    margin-bottom: 24px;
+    padding: 47px 0 19px;
+  }
 }
 
 .text__page-title_blog {
@@ -98,10 +111,28 @@
   max-width: 506px;
   margin: -33px auto 25px;
   font-weight: 400;
+
+  @include desktop() {
+    margin-top: 0;
+  }
 }
 
 .text__page-title_work-2 {
   margin: 71px auto 30px;
+
+  @include laptop() {
+    max-width: 398px;
+    margin: 0 auto;
+    padding: 40px 0 26px;
+    font-size: 49px;
+    line-height: 52px;
+  }
+  @include phone() {
+    max-width: 249px;
+    font-size: 35px;
+    line-height: 42px;
+    padding: 22px 0 26px;
+  }
 }
 
 .text__icon_blog {
@@ -137,6 +168,12 @@
 
 .text__title_about {
   margin-top: 40px;
+
+  @include tablet() {
+    font-size: 21px;
+    line-height: 28px;
+    margin-top: 10px;
+  }
 }
 
 .text__title-line {
@@ -164,5 +201,12 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  @include laptop() {
+    padding-bottom: 19px;
+    font-size: 30px;
+    line-height: 36px;
+    margin: 0 auto 17px;
   }
 }

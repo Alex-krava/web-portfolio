@@ -9,3 +9,11 @@
 @import 'text/text';
 @import 'social/social';
 @import '../common/footer/footer';
+
+.about-page {
+  .header-section__container {
+    @include desktop() {
+      width: 100%;
+    }
+  }
+}

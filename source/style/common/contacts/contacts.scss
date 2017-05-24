@@ -8,6 +8,16 @@
   left: 50%;
   transform: translate(-50%, -50%);
   box-sizing: border-box;
+
+  @include laptop() {
+    width: 349px;
+  }
+  @include phone() {
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: translateY(0);
+  }
 }
 
 .contacts__items{

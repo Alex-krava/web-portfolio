@@ -2,7 +2,17 @@
   position: relative;
   iframe {
     width: 100%;
-    height: 100vh;
+    height: 1114px;
     min-height: 600px;
+
+    @include desktop() {
+      height: 977px;
+    }
+    @include tablet() {
+      height: 815px;
+    }
+    @include phone() {
+      height: 900px;
+    }
   }
 }

@@ -2,19 +2,40 @@
   width: 100%;
   min-height: 200px;
   display: table;
+  @extend %clearfix;
+
+  @include tablet() {
+    display: block;
+  }
 }
 
 .about-section__container {
-  width: 900px;
+  width: 94.6%;
   box-sizing: border-box;
 }
 .about-section__container_left {
   float: right;
+
+  @include tablet() {
+    float: none;
+    width: 100%;
+  }
 }
 
 .about-section__container_right {
   float: left;
   padding-left: 40px;
+
+  @include tablet() {
+    width: 80%;
+    padding: 50px 15px;
+    margin: auto;
+    float: none;
+    text-align: center;
+  }
+  @include phone() {
+    width: 100%;
+  }
 }
 
 .about-section__about-me,
@@ -23,6 +44,12 @@
   width: 50%;
   padding-bottom: 40px;
   vertical-align: top;
+  @extend %clearfix;
+
+  @include tablet() {
+    display: block;
+    width: 100%;
+  }
 }
 
 .about-section__about-me {
@@ -31,10 +58,30 @@
 
 .about-section__skills {
   background-color: $color-9;
+
+  @include tablet() {
+    .text {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
 }
 
 .about-section__cell2{
   padding-right: 15px;
+
+  @include desktop() {
+    padding: 0;
+
+    .about-section__photo {
+      text-align: center;
+    }
+    .text {
+      width: 75%;
+      display: block;
+      margin: auto;
+    }
+  }
 }
 
 .about-section__cell1,
@@ -43,6 +90,11 @@
   width: 50%;
   vertical-align: top;
   position: relative;
+
+  @include desktop() {
+    display: block;
+    width: 100%;
+  }
 }
 
 .about-section__photo {

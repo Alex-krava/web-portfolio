@@ -2,6 +2,7 @@
   background-color: $color-8;
 
   .container {
+    padding: 0;
     @extend %clearfix;
   }
 }
@@ -13,6 +14,16 @@
   float: right;
   position: relative;
 
+  @include laptop() {
+    width: 100%;
+    float: none;
+  }
+
+  @include phone() {
+    height: 257px;
+    padding: 47px 0;
+  }
+
   img {
     max-width: 80%;
     position: absolute;
@@ -20,6 +31,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     max-height: 100%;
+
+    @include phone() {
+      max-width: 66%;
+    }
   }
 }
 
@@ -29,6 +44,13 @@
   background-color: $color-8;
   float: left;
   position: relative;
+
+  @include laptop() {
+    width: 100%;
+    float: none;
+    height: auto;
+    min-height: 250px;
+  }
 }
 
 .slider-section__nav {
@@ -39,10 +61,23 @@
   display: table;
   position: relative;
 
+  @include laptop() {
+    width: 100%;
+    float: none;
+  }
+
+  @include phone() {
+    height: 93px;
+  }
+
   img {
     max-width: 70%;
     display: block;
     margin: auto;
+
+    @include phone() {
+      max-width: 36%;
+    }
   }
 
 }
@@ -98,11 +133,24 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  @include laptop() {
+    position: static;
+    transform: translate(0, 0);
+    padding: 46px 15px;
+  }
 }
 
 .slider-section__name {
   .text__title-line {
     max-width: 320px;
+  }
+
+  @include phone() {
+    .text__title-line {
+      font-size: 21px;
+      line-height: 28px;
+    }
   }
 }
 
@@ -114,6 +162,15 @@
   font-weight: 500;
   text-transform: uppercase;
   margin-bottom: 58px;
+
+  @include laptop() {
+    margin-bottom: 38px;
+  }
+  @include phone() {
+    margin-bottom: 17px;
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 .slider-section__btn {

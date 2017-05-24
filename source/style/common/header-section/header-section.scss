@@ -56,6 +56,12 @@
   .right {
     fill: $color-9;
   }
+
+  @include tablet() {
+    .right {
+      fill: $color-8;
+    }
+  }
 }
 
 .header-section__triangle_blog {
